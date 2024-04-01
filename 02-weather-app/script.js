@@ -13,7 +13,7 @@ async function checkWeather(cityName="delhi"){
         document.querySelector(".weather").style.display = "none";
     }else{
         document.querySelector(".city-name").innerHTML = data.name;
-        document.querySelector(".temp").innerHTML = Math.round(data.main.temp)+"°C";
+        document.querySelector(".temp").innerHTML = Math.round(data.main.temp)+"°c";
         document.querySelector(".wind").innerHTML = data.wind.speed+" km/h";
         document.querySelector(".humidity").innerHTML = data.main.humidity+"%";
     
