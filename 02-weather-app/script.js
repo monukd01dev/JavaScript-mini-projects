@@ -81,4 +81,37 @@ input.addEventListener('click',()=>{
 // });
 
 
+//dark-mode
+
+const mode = document.querySelector(".mode")
+mode.addEventListener('click',()=>{
+    if(mode.innerText.trim() == "Light Mode"){
+        mode.innerHTML = '<i class="fa-solid fa-moon"></i> <span class="mode-name">dark mode</span>'
+        mode.style.backgroundColor = "#555";
+        mode.style.color = "white";
+
+        document.body.style.backgroundColor = "white"
+        document.querySelector("nav").style.backgroundColor ="white"
+        document.querySelector("nav").style.color ="black"
+        document.querySelector("nav").style.borderBottom ="2px solid black"
+        document.querySelector(".card").classList.toggle("card-shadow")
+
+        
+    }
+    else{
+        mode.innerHTML = '<i class="fa-solid fa-sun"></i> <span class="mode-name">light mode</span>'
+        mode.style.backgroundColor = "white";
+        mode.style.color = "black";
+
+        document.body.style.backgroundColor = "#222"
+        document.querySelector("nav").style.backgroundColor ="#767575"
+        document.querySelector("nav").style.color ="white"
+        document.querySelector("nav").style.borderBottom ="2px solid #999"
+        document.querySelector(".card").classList.toggle("card-shadow")
+        
+    }
+    console.log('clicked', mode.innerText);
+    
+})
+
 
