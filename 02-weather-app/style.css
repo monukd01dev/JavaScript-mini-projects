@@ -134,6 +134,10 @@ nav a{
     margin-top: -6px ;
 }
 
+.weather {
+    display: none;
+}
+
 .error{
     font-size: 14px;
     text-align: left;
@@ -213,5 +217,5 @@ nav a{
         font-size: 1.1rem;
          margin-top: -0.75rem;
     }
-        
+
 }

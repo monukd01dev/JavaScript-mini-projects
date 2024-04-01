@@ -61,7 +61,7 @@ async function checkWeather(cityName="delhi"){
 }
 
 //normal event handling
-button.addEventListener('click',(e)=>{
+button.addEventListener('click',()=>{
     
      checkWeather(input.value.trim() || "delhi");
     
